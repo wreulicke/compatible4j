@@ -13,10 +13,8 @@ buildscript {
   }
 }
 
-ext {
-  group = 'com.github.wreulicke.compatible4j'
-  version = "0.0.1-SNAPSHOT"
-}
+group = 'com.github.wreulicke.compatible4j'
+version = "0.0.1-SNAPSHOT"
 
 subprojects {
   version = rootProject.version
