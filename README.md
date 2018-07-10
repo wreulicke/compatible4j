@@ -26,17 +26,17 @@ class A {
 }
 
 @Comaptible(A.class)
-class B { // B is similar to A.
+class B { // B is compatible to A.
   Integer field;
 }
 
 @Comaptible(A.class)
-class C { // C is not similar to A.
+class C { // C is not compatible to A.
   String field;
 }
 
 @Comaptible(A.class)
-class D { // D is similar to A.
+class D { // D is compatible to A.
   Integer field;
 
   String otherField;
