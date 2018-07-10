@@ -21,6 +21,7 @@ ext {
 subprojects {
   version = rootProject.version
   group = rootProject.group
+  
   apply plugin: 'java-library'
   apply plugin: 'jacoco'
   apply plugin: "com.github.spotbugs"
