@@ -14,16 +14,18 @@ buildscript {
 }
 
 ext {
+  group = 'com.github.wreulicke'
   version = "0.0.1-SNAPSHOT"
 }
 
 subprojects {
   version = rootProject.version
+  group = rootProject.group
   apply plugin: 'java-library'
   apply plugin: 'jacoco'
   apply plugin: "com.github.spotbugs"
   apply plugin: "maven-publish"
-  
+
   // apply plugin: "pmd"
   apply plugin: "de.thetaphi.forbiddenapis"
   apply plugin: "com.diffplug.gradle.spotless"
