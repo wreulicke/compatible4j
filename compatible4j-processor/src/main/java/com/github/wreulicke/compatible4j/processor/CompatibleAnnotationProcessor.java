@@ -56,7 +56,7 @@ public class CompatibleAnnotationProcessor extends AbstractProcessor {
         VariableElement field = fieldMap.get(name);
         if (field == null) {
           this.processingEnv.getMessager()
-            .printMessage(Diagnostic.Kind.ERROR, typeElement.getSimpleName() + "` has not `" + name + "` field of " + otherField.asType(),
+            .printMessage(Diagnostic.Kind.ERROR, typeElement.getSimpleName() + " has not `" + name + "` field of " + otherField.asType(),
               typeElement);
           isNotCompatible = true;
         }
