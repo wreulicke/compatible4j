@@ -22,6 +22,8 @@ subprojects {
   apply plugin: 'java-library'
   apply plugin: 'jacoco'
   apply plugin: "com.github.spotbugs"
+  apply plugin: "maven-publish"
+  
   // apply plugin: "pmd"
   apply plugin: "de.thetaphi.forbiddenapis"
   apply plugin: "com.diffplug.gradle.spotless"
