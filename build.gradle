@@ -22,7 +22,7 @@ subprojects {
   apply plugin: 'java-library'
   apply plugin: 'jacoco'
   apply plugin: "com.github.spotbugs"
-  apply plugin: "pmd"
+  // apply plugin: "pmd"
   apply plugin: "de.thetaphi.forbiddenapis"
   apply plugin: "com.diffplug.gradle.spotless"
   
@@ -57,23 +57,23 @@ subprojects {
 
     testImplementation "org.assertj:assertj-core:3.10.0"
 
-    pmd "net.sourceforge.pmd:pmd-java:$pmdVersion"
+    // pmd "net.sourceforge.pmd:pmd-java:$pmdVersion"
   }
 
-  pmd {
-    consoleOutput = true
-    toolVersion = "$pmdVersion"
-  }
+  // pmd {
+  //   consoleOutput = true
+  //   toolVersion = "$pmdVersion"
+  // }
 
-  pmdMain {
-    ruleSetFiles = rootProject.files("pmd.xml")
-    ruleSets = []  // To apply only the custom rules
-  }
+  // pmdMain {
+  //   ruleSetFiles = rootProject.files("pmd.xml")
+  //   ruleSets = []  // To apply only the custom rules
+  // }
 
-  pmdTest {
-    ruleSetFiles = rootProject.files("pmd.xml")
-    ruleSets = []  // To apply only the custom rules
-  }
+  // pmdTest {
+  //   ruleSetFiles = rootProject.files("pmd.xml")
+  //   ruleSets = []  // To apply only the custom rules
+  // }
 
   spotbugs {
     toolVersion = "$spotbugsVersion"
