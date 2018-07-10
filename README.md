@@ -4,6 +4,15 @@ Compatible4j
 
 Provides automaticalliy compatibility detection between beans.
 
+## Install 
+
+```gradle
+dependencies {
+  compile 'com.github.wreulicke.compatible4j:compatible4j-annotation:0.0.1'
+  annotationProcessor 'com.github.wreulicke.compatible4j:compatible4j-processor:0.0.1'
+}
+```
+
 
 ## Usage
 
