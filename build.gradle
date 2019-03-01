@@ -56,7 +56,7 @@ subprojects {
     testImplementation "org.junit.platform:junit-platform-runner:$junitPlatfromVersion"
     testImplementation "org.junit.platform:junit-platform-launcher:$junitPlatfromVersion" // for IDE
 
-    testImplementation "org.assertj:assertj-core:3.11.1"
+    testImplementation "org.assertj:assertj-core:3.12.1"
 
     // pmd "net.sourceforge.pmd:pmd-java:$pmdVersion"
   }
