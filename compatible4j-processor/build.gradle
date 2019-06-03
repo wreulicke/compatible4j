@@ -7,5 +7,5 @@ dependencies {
   implementation "org.kohsuke.metainf-services:metainf-services:1.8"
   annotationProcessor "org.kohsuke.metainf-services:metainf-services:1.8"
 
-  testImplementation "com.google.testing.compile:compile-testing:0.15"
+  testImplementation "com.google.testing.compile:compile-testing:0.18"
 }
